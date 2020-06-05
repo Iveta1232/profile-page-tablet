@@ -1,0 +1,14 @@
+body {
+  max-width: 768px;
+  height: 4227px;
+  background: #CCCCCC;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 768px;
+  height: 381px;
+  background-image: url('../images_t/bgHeader.png');
+  margin: 0 auto;
+}
