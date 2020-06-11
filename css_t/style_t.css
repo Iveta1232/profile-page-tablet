@@ -117,29 +117,135 @@ main {
   line-height: 16px;
   color: #999999;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#buttoms {
+  width: 310px;
+  height: 104px;
+  margin: 0 auto 51px auto;
+}
+#buttoms a {
+  display: inline-block;
+  width: 100px;
+  height: 104px;
+  border-radius: 4px;
+  background: white;
+  text-decoration: none;
+  margin: 0;
+}
+#buttoms  a:hover  {
+  background: rgba(200, 200, 200, 0.2);
+}
+#buttoms .active{
+  background: #9C27B0;
+}
+.smallIcon {
+  width: 30px;
+  height: 30px;
+  margin: 25px 35px 49px 35px;
+}
+#buttomStudio .smallIcon {
+  background: url("../images_t/defS.svg");
+}
+#buttomStudio:focus .smallIcon {
+  background: url("../images_t/actS.svg");
+}
+#buttomStudio:hover .smallIcon {
+  background: url("../images_t/hovS.svg");
+}
+#buttomWork .smallIcon {
+  background: url("../images_t/defW.svg");
+}
+#buttomWork:focus .smallIcon {
+  background: url("../images_t/actW.svg");
+}
+#buttomWork:hover .smallIcon {
+  background: url("../images_t/hovW.svg");
+}
+#buttomFavorite .smallIcon {
+  background: url("../images_t/defF.svg");
+}
+#buttomFavorite:focus .smallIcon {
+  background: url("../images_t/actF.svg");
+}
+#buttomFavorite:hover .smallIcon {
+  background: url("../images_t/hovF.svg");
+}
+.studio-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
+  margin: -34px 29px 14px 29px;
+}
+#buttomStudio:focus .studio-text {
+  color: #FFFFFF;
+}
+#buttomStudio:hover .studio-text {
+  color: #555555;
+}
+.work-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
+  margin: -34px 33px 14px 33px;
+}
+#buttomWork:focus .work-text {
+  color: #FFFFFF;
+}
+#buttomWork:hover .work-text {
+  color: #555555;
+}
+.favorite-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
+  margin: -34px 23px 14px 23px;
+}
+#buttomFavorite:focus .favorite-text {
+  color: #FFFFFF;
+}
+#buttomFavorite:hover .favorite-text {
+  color: #555555;
+}
+#photos {
+  width: 725px;
+  height: 3213px;
+  margin: 0 auto;
+}
+.photo1 {
+  width: 725px;
+  height: 542px;
+  border-radius: 6px;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+.photo2 {
+  width: 725px;
+  height: 1081px;
+  border-radius: 6px;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+.photo3 {
+  width: 725px;
+  height: 961px;
+  border-radius: 6px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.photo4 {
+  width: 725px;
+  height: 541px;
+  border-radius: 6px;
+  margin-top: 0;
+}
 footer {
   width: 462px;
   height: 62px;

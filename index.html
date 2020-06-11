@@ -33,40 +33,93 @@
     </header>
     <main>
       <div class="whiteBg">
-        <div class="profile">
-           <img class="avatar" src="images_t/avatar.png" alt="avatar">
-           <p class="username">
-               Christian Louboutin
-           </p>
-           <p class="profession">
-               DESIGNER
-           </p>
-           <p class="description">
-               An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
-               Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid
-               groove structure.
-           </p>
-        </div>
-
-
-
-
-
+          <div class="profile">
+             <img class="avatar" src="images_t/avatar.png" alt="avatar">
+             <p class="username">
+                 Christian Louboutin
+             </p>
+             <p class="profession">
+                 DESIGNER
+             </p>
+             <p class="description">
+                 An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
+                 Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid
+                 groove structure.
+             </p>
+          </div>
+          <div id="buttoms">
+            <a href="#" id="buttomStudio" class="tab-buttons active" onclick="openGallery(event, 'Studio', 'buttomStudio')">
+                  <div class="smallIcon">
+                  </div>
+                  <p class= "studio-text">
+                      STUDIO
+                  </p>
+            </a>
+            <a href="#"  id="buttomWork" class="tab-buttons" onclick="openGallery(event, 'Work', 'buttomWork')">
+                  <div class="smallIcon">
+                  </div>
+                  <p class="work-text">
+                      WORK
+                  </p>
+            </a>
+            <a href="#" id="buttomFavorite" class="tab-buttons" onclick="openGallery(event, 'Favorite', 'buttomFavorite')">
+                  <div class="smallIcon">
+                  </div>
+                  <p class="favorite-text">
+                      FAVORITE
+                  </p>
+            </a>
+          </div>
+          <div id="photos">
+             <div id="Work" class="gallery">
+                <img class="photo1" src="images_t/photo1.png" alt="photo1">
+             </div>
+             <div id="Favorite" class="gallery">
+                <img class="photo2" src="images_t/photo2.png" alt="photo2">
+             </div>
+             <div id="Studio" class="gallery">
+                <img class="photo3" src="images_t/photo3.png" alt="photo3">
+                <img class="photo4" src="images_t/photo4.png" alt="photo4">
+             </div>
+          </div>
+          <script>
+             function openGallery(event, galleryName, buttonName) {
+                 event.preventDefault()
+                 var i;
+                 var x = document.getElementsByClassName("gallery");
+                 for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                 }
+             document.getElementById(galleryName).style.display = "block";
+                /* Change style of buttons */
+               var x = document.getElementsByClassName("active");
+               for (i = 0; i < x.length; i++) {
+                  x[i].classList.remove("active");
+               }
+             document.getElementById(buttonName).classList.add("active");
+             }
+          </script>
       </div>
     </main>
     <footer>
-      <nav id="footerLinks">
-      <a href="index.html" class="footerLogo a">
-      CREATIVE TIM
-  </a>
-
-      <a href="#" class="a">ABOUT US</a>
-      <a href="#" class="a">BLOG</a>
-      <a href="#" class="link">LICENSES</a>
-  </nav>
-  <div class="information">
-      &#169; 2016, made with &#10084; by Creative Tim
-  </div>
+       <nav id="footerLinks">
+          <a href="index.html" class="footerLogo a">
+              CREATIVE TIM
+          </a>
+          <a href="#" class="a">
+              ABOUT US
+          </a>
+          <a href="#" class="a">
+              BLOG
+          </a>
+          <a href="#" class="link">
+              LICENSES
+          </a>
+       </nav>
+       <div class="information">
+             &#169; 2016, made with &#10084; by Creative Tim
+       </div>
     </footer>
+
   </body>
 </html>
